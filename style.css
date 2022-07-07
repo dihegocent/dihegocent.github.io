@@ -72,11 +72,12 @@ body {
     place-items: center;
     position: relative;
     height: 400px;
-    width: 100px;
+    width: 60px;
     background-color: #191919;
     border-radius:40px;
     overflow: hidden;
 }
+
 .part-two{
     margin-top: 10px;
 }
@@ -89,7 +90,7 @@ body {
     width: 60px;
     height: 800px;
     left: 10px;
-    top: -110px;
+    top: -100px;
     position: relative;
     background: linear-gradient(#00e5ff,#b400fb);
     animation: animate 5s linear infinite ;
@@ -108,7 +109,8 @@ body {
     border-radius: 40px;
     background-image: url(./content/profile.png) ;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center ;
+    background-size:contain ;
     
     
 }
