@@ -1,0 +1,250 @@
+
+
+
+
+/* Estilos generales */
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .container {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el modo claro */
+  body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .light-mode .navbar {
+    background-color: #f8f9fa;
+  }
+  .light-mode .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  .light-mode .card {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .dark-mode .navbar {
+    background-color: #333333;
+  }
+  .dark-mode .bg-dark {
+    background-color: #333333 !important;
+  }
+  .dark-mode .card {
+    background-color: #1c1c1c;
+    color: #ffffff;
+  }
+
+/* Estilos personalizados aquí */
+
+/* Estilos para la sección "About Me" */
+.about-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-image {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    transition: border-color 0.3s;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%); /* Imagen en blanco y negro por defecto */
+}
+
+.profile-image:hover {
+    border-color: #17a2b8; /* Cambio de color del borde al pasar el puntero */
+}
+
+.profile-image:hover img {
+    filter: grayscale(0%); /* Cambio a color al pasar el puntero */
+}
+
+
+
+/* Estilos para la sección "Skills" */
+.skills-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.progress {
+    background-color: #f0f0f0;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: #17a2b8;
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+
+
+/* Estilos para la sección "Experiences" */
+.experiences-section {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.experience {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3 {
+    margin-bottom: 10px;
+}
+
+.experience-duration {
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.experience-description {
+    font-size: 16px;
+}
+
+
+
+/* Estilos para la sección "Education" */
+.education-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.education-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flip-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.flip-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección "Download" */
+.download-section {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #138496;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
