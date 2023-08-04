@@ -2,7 +2,7 @@
 
 
 
-/* Estilos generales */
+/* General */
 body {
     transition: background-color 0.3s, color 0.3s;
   }
@@ -10,7 +10,7 @@ body {
     margin-top: 20px;
   }
   
-  /* Estilos para el modo claro */
+  /* light */
   body.light-mode {
     background-color: #ffffff;
     color: #000000;
@@ -42,16 +42,15 @@ body {
     color: #ffffff;
   }
 
-/* Estilos personalizados aquí */
 
-/* Estilos para la sección "About Me" */
+/* About Me */
 .about-section {
     background-color: #ffffff;
     text-align: center;
     padding: 60px 0;
 }
 
-/* Estilos para la imagen de perfil */
+
 .profile-image {
     display: inline-block;
     position: relative;
@@ -78,7 +77,7 @@ body {
 
 
 
-/* Estilos para la sección "Skills" */
+/*Skills */
 .skills-section {
     background-color: #ffffff;
     text-align: center;
@@ -125,7 +124,7 @@ body {
 
 
 
-/* Estilos para la sección "Experiences" */
+/Experiences */
 .experiences-section {
     background-color: #f0f0f0;
     padding: 60px 0;
@@ -155,7 +154,7 @@ body {
 
 
 
-/* Estilos para la sección "Education" */
+/* Education */
 .education-section {
     background-color: #ffffff;
     padding: 60px 0;
@@ -238,7 +237,7 @@ body {
     background-color: #138496;
 }
 
-/* Estilos para el footer */
+/*Footer */
 .footer {
     background-color: #333333;
     color: #ffffff;
